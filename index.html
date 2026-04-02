@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PadhoSmart - AI Student Platform</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#fff;color:#111}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-bottom:1px solid #eee}
+.logo{font-size:20px;font-weight:600;color:#185FA5}
+.nav-btn{background:#185FA5;color:white;border:none;padding:8px 18px;border-radius:8px;font-size:13px;cursor:pointer}
+.hero{text-align:center;padding:48px 24px;background:linear-gradient(135deg,#E6F1FB,#EAF3DE)}
+.hero h1{font-size:28px;font-weight:700;color:#0C447C;margin-bottom:10px}
+.hero p{font-size:15px;color:#378ADD;margin-bottom:24px}
+.badge{display:inline-block;background:#E6F1FB;color:#185FA5;padding:4px 12px;border-radius:20px;font-size:12px;margin-bottom:14px}
+.btn-primary{background:#185FA5;color:white;border:none;padding:12px 24px;border-radius:8px;font-size:14px;cursor:pointer;margin:4px}
+.btn-secondary{background:white;color:#185FA5;border:1px solid #185FA5;padding:12px 24px;border-radius:8px;font-size:14px;cursor:pointer;margin:4px}
+.tools{padding:36px 20px}
+.tools h2{text-align:center;font-size:20px;margin-bottom:6px}
+.sub{text-align:center;font-size:13px;color:#666;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.card{background:#f8f8f8;border:1px solid #eee;border-radius:12px;padding:16px 12px;text-align:center}
+.card h3{font-size:13px;font-weight:600;margin:8px 0 4px}
+.card p{font-size:11px;color:#666}
+.free-tag{background:#EAF3DE;color:#3B6D11;font-size:10px;padding:2px 8px;border-radius:10px;display:inline-block;margin-top:6px}
+.prem-tag{background:#FAEEDA;color:#854F0B;font-size:10px;padding:2px 8px;border-radius:10px;display:inline-block;margin-top:6px}
+.premium{padding:32px 20px;background:#f8f8f8}
+.premium h2{text-align:center;font-size:20px;margin-bottom:20px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:400px;margin:0 auto}
+.plan{background:white;border:1px solid #eee;border-radius:12px;padding:16px}
+.plan.featured{border:2px solid #185FA5}
+.plan-name{font-size:13px;font-weight:600;margin-bottom:4px}
+.plan-price{font-size:22px;font-weight:700;color:#185FA5}
+.plan-price span{font-size:12px;color:#999}
+.plan-feature{font-size:11px;color:#666;margin-top:8px;line-height:1.8}
+footer{text-align:center;padding:20px;font-size:12px;color:#999;border-top:1px solid #eee}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">PadhoSmart</div>
+  <button class="nav-btn">Login</button>
+</nav>
+<div class="hero">
+  <div class="badge">India ka #1 AI Student Platform</div>
+  <h1>Padhai Smart Karo,<br>AI ke Saath!</h1>
+  <p>Assignment, MCQ, Notes — sab kuch ek jagah. Free mein!</p>
+  <button class="btn-primary">Free Mein Shuru Karo</button>
+  <button class="btn-secondary">Tools Dekho</button>
+</div>
+<div class="tools">
+  <h2>AI Tools — Bilkul Free</h2>
+  <p class="sub">Students ke liye banaye gaye smart tools</p>
+  <div class="grid">
+    <div class="card"><div style="font-size:28px">📝</div><h3>Assignment Maker</h3><p>Topic do, assignment ready!</p><span class="free-tag">Free</span></div>
+    <div class="card"><div style="font-size:28px">❓</div><h3>MCQ Generator</h3><p>Practice karo exam ke liye</p><span class="free-tag">Free</span></div>
+    <div class="card"><div style="font-size:28px">📖</div><h3>Notes Summary</h3><p>Bade chapter chhota summary</p><span class="free-tag">Free</span></div>
+    <div class="card"><div style="font-size:28px">🔮</div><h3>Exam Predictor</h3><p>Kya aayega exam mein?</p><span class="prem-tag">Premium</span></div>
+  </div>
+</div>
+<div class="premium">
+  <h2>Plans</h2>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-name">Free</div>
+      <div class="plan-price">₹0 <span>/month</span></div>
+      <div class="plan-feature">3 assignments/day<br>5 MCQ/day<br>Ads honge</div>
+    </div>
+    <div class="plan featured">
+      <div class="plan-name">Premium ⭐</div>
+      <div class="plan-price">₹99 <span>/month</span></div>
+      <div class="plan-feature">Unlimited sab kuch<br>No ads<br>PDF download</div>
+    </div>
+  </div>
+</div>
+<footer>PadhoSmart © 2026 — India ka AI Student Platform</footer>
+</body>
+</html>
