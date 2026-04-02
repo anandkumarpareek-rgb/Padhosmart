@@ -812,17 +812,25 @@ function copyResult(id) {
 
 // AI GENERATION FUNCTIONS
 async function callAI(prompt) {
-  const response = await fetch("/api/generate", {
+  const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer " + "TUMHARI_NAYI_GROQ_KEY_YAHAN"
+    },
     body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: 1000,
-      messages: [{ role: "user", content: prompt }]
+      model: "llama3-8b-8192",
+      messages: [{ role: "user", content: prompt }],
+      max_tokens: 1000
     })
   });
   const data = await response.json();
-  return data.result;
+  return data.choices[0].message.content;
+}
+  });
+  const data = await response.json();
+  return data.choices[0].message.content;
+}
 }
 
 async function generateAssignment() {
