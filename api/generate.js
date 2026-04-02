@@ -816,7 +816,7 @@ async function callAI(prompt) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer " + "TUMHARI_NAYI_GROQ_KEY_YAHAN"
+      "Authorization": "Bearer " + "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"
     },
     body: JSON.stringify({
       model: "llama3-8b-8192",
